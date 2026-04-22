@@ -1,0 +1,33 @@
+# Experiment-20: CI/CD Pipeline for Application Deployment
+
+## Objective
+To implement a CI/CD pipeline using GitHub Actions and Docker for backend deployment.
+
+## Technologies Used
+- Node.js
+- Express.js
+- Docker
+- GitHub Actions
+
+## Steps Performed
+
+1. Created backend server using Node.js and Express.
+2. Tested backend locally on localhost:3000.
+3. Created Dockerfile to containerize the application.
+4. Built Docker image using:
+   docker build -t testing-backend .
+5. Ran Docker container:
+   docker run -d -p 3000:3000 testing-backend
+6. Verified running container using:
+   docker ps
+7. Pushed code to GitHub repository.
+8. Created CI/CD pipeline using GitHub Actions.
+9. Workflow automatically triggered on push and executed successfully.
+
+## Output
+- Docker image created successfully
+- Container running successfully
+- CI/CD pipeline executed with success
+
+## Conclusion
+Successfully implemented CI/CD pipeline using GitHub Actions and Docker for automated deployment.
